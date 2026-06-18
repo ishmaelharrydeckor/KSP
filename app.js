@@ -64,8 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
     phone: (value) => {
       // Remove spaces, hyphens, and parentheses
       const cleanPhone = value.replace(/[\s\-\(\)]/g, '');
-      // Standard validation: numbers only, length between 9 and 15 digits (to support country codes)
-      const phoneRegex = /^\+?[0-9]{9,15}$/;
+      // Strictly match local format (e.g. 0555908380), +233 format (e.g. +233555908380), or 233 format (e.g. 233555908380)
+      const phoneRegex = /^(0\d{9}|\+233\d{9}|233\d{9})$/;
       return phoneRegex.test(cleanPhone);
     },
     college: (value) => {
