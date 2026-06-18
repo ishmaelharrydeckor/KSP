@@ -124,34 +124,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set Loading State
     setLoadingState(true);
 
-    // Prepare payload
     const formData = {
-      // Name variations
-      name: inputFullName.value.trim(),
-      fullname: inputFullName.value.trim(),
       fullName: inputFullName.value.trim(),
-      'Full Name': inputFullName.value.trim(),
-      Name: inputFullName.value.trim(),
-
-      // Email variations
       email: inputEmail.value.trim(),
-      emailAddress: inputEmail.value.trim(),
-      'Email Address': inputEmail.value.trim(),
-
-      // Contact variations
-      phone: inputPhone.value.trim(),
-      phoneNumber: inputPhone.value.trim(),
-      phone_number: inputPhone.value.trim(),
-      number: inputPhone.value.trim(),
-      contact: inputPhone.value.trim(),
       contactNumber: inputPhone.value.trim(),
-      'Contact Number': inputPhone.value.trim(),
-      Phone: inputPhone.value.trim(),
-      Number: inputPhone.value.trim(),
-
-      // College variations
-      college: selectCollege.value,
-      'KNUST College': selectCollege.value
+      college: selectCollege.value
     };
 
     try {
