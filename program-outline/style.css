@@ -284,6 +284,56 @@ body {
   margin-bottom: 30px;
 }
 
+/* Highlight Tracker Control Panel */
+.control-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 18px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.control-label {
+  font-family: var(--font-title);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-gray);
+  letter-spacing: 0.5px;
+}
+
+.toggle-container {
+  display: flex;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-gray);
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.toggle-btn:hover {
+  color: var(--text-white);
+}
+
+.toggle-btn.active {
+  background: var(--accent-emerald);
+  color: var(--text-dark);
+  box-shadow: 0 2px 6px rgba(31, 219, 142, 0.2);
+}
+
 /* Timeline Layout */
 .timeline {
   position: relative;
